@@ -1,0 +1,15 @@
+/**
+    Footer styles
+*/
+footer {
+    .row {
+        flex-direction: column;
+        @include respond-to-above( xs-mini-screens ) {
+            flex-direction: row;
+        }
+
+    }
+    p.copyright {
+        padding-left: 15px;
+    }
+}

@@ -1,0 +1,41 @@
+/** Style for pagination **/
+
+.font-list_pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:1.2rem;
+    margin-bottom: 1.2rem;
+    .font-list_pagination_p {
+        &.active a {
+            color: black;
+        }
+        a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: $RHGrey;
+            padding: 0 3px;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    .font-list_pagination_prev,
+    .font-list_pagination_next 
+    {
+        a {
+            color: $RHGrey;
+            font-size: 1.2rem;
+            text-decoration: none;
+            &:hover {
+                color: black;
+            }            
+        }
+    }
+    .font-list_pagination_prev {
+        margin-right: 1rem;
+    }
+    .font-list_pagination_next {
+        margin-left: 1rem;
+    }    
+}

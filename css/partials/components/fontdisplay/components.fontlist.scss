@@ -1,0 +1,86 @@
+/* Font list styles */
+
+/** New styles a/o 15/1/2020 */
+
+.font-list-new {
+    width: 100%;
+    a {
+        color: $RHDarkGrey;
+        &:hover {
+            color: $RHRed;
+            img {
+                opacity: 0.5;
+                filter: alpha(opacity=50);                
+            }
+        }
+    }
+    .font-list-entry-new {
+        width: 100%;
+        overflow: hidden;
+        border-top: 3px solid $RHGrey;
+        height: 100px;
+    }
+}
+
+.font-list-entry-new-desc {
+    display: flex;
+    font-weight: normal;
+}
+
+
+
+.font-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //justify-content: space-evenly;
+    margin-bottom: 30px;
+    a {
+        text-decoration: none;
+        border-top: 4px solid $RHGrey;
+        width: 229px;
+        height: 96px;
+        margin-right: 8px;
+        margin-bottom: 7px;
+        &:nth-child( 4n ) { margin-right: 0; }
+        color: $RHDarkGrey;
+        &:hover {
+            color: $RHGrey;
+        }
+    }
+}
+.font-list-entry {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,cec7bd+50,cec7bd+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 50%, #cec7bd 50%, #cec7bd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#cec7bd 50%,#cec7bd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#cec7bd 50%,#cec7bd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cec7bd',GradientType=1 ); /* IE6-9 */
+    height: 100%;
+    position: relative;
+    h3 {
+        position: absolute;
+        top:0;
+        left: 0;
+        font-weight: normal;
+    }
+}
+.font-list-entry_sample {
+    //font-size: 8rem;
+    width: 100%;
+    overflow: hidden;
+    height: 50px; //100%;
+    //padding-left: 2vw;
+    //padding-top: 25px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 22px;
+    img {
+        height: 100%;
+    }
+}
+.font-list-entry_standard {
+    position: absolute;
+    bottom: 0;
+    right: 3px;
+}

@@ -1,0 +1,30 @@
+/* Styles for font type presented on the site */
+
+body {
+	//font-size: 87.5%;
+	font-family: $bodyFamily;
+	line-height: 1.8rem;
+	color: $RHDarkGrey;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, a, p {
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+p.copyright { font-size: 10px; }
+
+ul.subtitle {
+	font-size: 40px;
+}
+
+a {
+	color: $RHRed;
+	text-decoration: none;
+	&:hover {
+		color: $RHDarkGrey;
+	}
+}

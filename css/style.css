@@ -1,0 +1,689 @@
+/**
+    Global styles
+*/
+html {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-size: 14px;
+}
+
+/**
+    Colours
+*/
+/* Font style accummulator */
+/**
+	Fonts styles
+*/
+@font-face {
+  font-family: "Paralucent Medium";
+  src: url("fonts/Paralucent-Medium.eot");
+  src: url("fonts/Paralucent-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Paralucent-Medium.woff") format("woff"), url("fonts/Paralucent-Medium.ttf") format("truetype"), url("fonts/Paralucent-Medium.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: "Paralucent Light";
+  src: url("fonts/Paralucent-Light.eot");
+  src: url("fonts/Paralucent-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Paralucent-Light.woff") format("woff"), url("fonts/Paralucent-Light.ttf") format("truetype"), url("fonts/Paralucent-Light.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: "Paralucent Thin";
+  src: url("fonts/Paralucent-Thin.eot");
+  src: url("fonts/Paralucent-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/Paralucent-Thin.woff") format("woff"), url("fonts/Paralucent-Thin.ttf") format("truetype"), url("fonts/Paralucent-Thin.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: "Dynasty";
+  src: url("fonts/Dynasty-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dynasty";
+  src: url("fonts/Dynasty-Light.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+/* Styles for font type presented on the site */
+body {
+  font-family: "Paralucent Medium", serif;
+  line-height: 1.8rem;
+  color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, a, p {
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+p.copyright {
+  font-size: 10px;
+}
+
+ul.subtitle {
+  font-size: 40px;
+}
+
+a {
+  color: #db704d;
+  text-decoration: none;
+}
+a:hover {
+  color: #333333;
+}
+
+/**
+	Grid values
+*/
+/*$break-large: 	1000px;
+$break-medium: 	880px;
+$break-small: 	768px;
+$break-mini: 	500px;*/
+/** Structural elements 
+* Overwriting bootstrap elements
+*/
+.container {
+  width: 940px;
+  margin: 0 auto 30px auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.row .col-4 {
+  width: 24%;
+}
+.row .col-6 {
+  width: 16%;
+}
+
+/** Wrapper styles */
+nav {
+  width: 100%;
+  background-color: #cec7bd;
+  height: 40px;
+}
+
+header {
+  height: 100px;
+}
+
+main {
+  padding-top: 20px;
+}
+
+/* Component accumulator */
+/** Navigation styling */
+/* Main nav style */
+nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav .menu-secondary {
+  width: 48%;
+}
+nav .menu-secondary a {
+  padding: 9px 30px 5px 0;
+}
+nav .menu-header {
+  width: 48%;
+}
+nav .menu-header .menu {
+  justify-content: right;
+}
+nav .menu-header a {
+  padding: 9px 0 5px 30px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav a {
+  color: #333333;
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px black;
+  display: inline-block;
+}
+nav a:hover {
+  color: white;
+}
+nav li.disabled {
+  position: relative;
+}
+nav li.disabled:hover .sub-menu {
+  top: 40px;
+  transition-duration: 0.5s;
+}
+nav .sub-menu {
+  position: absolute;
+  top: -500px;
+  transition-duration: 0.5s;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  background-color: white;
+}
+nav .sub-menu li {
+  padding: 3px;
+}
+nav .sub-menu li:hover {
+  background-color: #db704d;
+}
+nav .sub-menu li:hover a {
+  color: white;
+}
+
+/* Mobile navigation styles */
+.menu-mobile {
+  display: none;
+}
+
+/** Footer navigation styles */
+footer a {
+  color: #db704d;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/** Home navigation styling */
+.home-nav h3 {
+  padding-bottom: 7px;
+}
+
+ul.subtitle {
+  padding-top: 30px;
+}
+ul.subtitle span {
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+.tagline {
+  display: none;
+  font-family: "Paralucent Light", sans-serif;
+  color: #cec7bd;
+}
+
+/* Font display */
+/* Font list styles */
+/** New styles a/o 15/1/2020 */
+.font-list-new {
+  width: 100%;
+}
+.font-list-new a {
+  color: #333333;
+}
+.font-list-new a:hover {
+  color: #db704d;
+}
+.font-list-new a:hover img {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.font-list-new .font-list-entry-new {
+  width: 100%;
+  overflow: hidden;
+  border-top: 3px solid #cec7bd;
+  height: 100px;
+}
+
+.font-list-entry-new-desc {
+  display: flex;
+  font-weight: normal;
+}
+
+.font-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.font-list a {
+  text-decoration: none;
+  border-top: 4px solid #cec7bd;
+  width: 229px;
+  height: 96px;
+  margin-right: 8px;
+  margin-bottom: 7px;
+  color: #333333;
+}
+.font-list a:nth-child(4n) {
+  margin-right: 0;
+}
+.font-list a:hover {
+  color: #cec7bd;
+}
+
+.font-list-entry {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,cec7bd+50,cec7bd+100 */
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 50%, #cec7bd 50%, #cec7bd 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 50%, #cec7bd 50%, #cec7bd 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #cec7bd 50%, #cec7bd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#cec7bd",GradientType=1 );
+  /* IE6-9 */
+  height: 100%;
+  position: relative;
+}
+.font-list-entry h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: normal;
+}
+
+.font-list-entry_sample {
+  width: 100%;
+  overflow: hidden;
+  height: 50px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 22px;
+}
+.font-list-entry_sample img {
+  height: 100%;
+}
+
+.font-list-entry_standard {
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+}
+
+/** Styles for Font Set Display */
+.font-child_heading {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #cec7bd;
+}
+.font-child_heading .font-child_heading-hero {
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 50%, #cec7bd 50%, #cec7bd 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 50%, #cec7bd 50%, #cec7bd 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #cec7bd 50%, #cec7bd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#cec7bd",GradientType=1 );
+  /* IE6-9 */
+  border-top: 4px solid #cec7bd;
+  width: 229px;
+  height: 96px;
+  margin-right: 8px;
+  overflow: hidden;
+}
+.font-child_heading .font-child_heading-hero h1 {
+  font-weight: normal;
+}
+.font-child_heading .font-child_heading-hero-sample {
+  width: 703px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.font-child_heading .font-child_heading-hero-sample img {
+  align-self: flex-start;
+  margin-bottom: 7px;
+  max-width: 100%;
+}
+
+.font-buy-all_form {
+  float: right;
+}
+
+.font-child-list {
+  margin-top: 50px;
+}
+
+.details_fullscreen {
+  display: flex;
+  flex-direction: row;
+}
+
+.details_mobile {
+  display: none;
+}
+
+.font-child-list-entry {
+  padding-top: 18px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+.font-child-list-entry:last-child {
+  border-bottom: none;
+}
+
+.font-child-list-entry_buy {
+  float: right;
+}
+
+.font-child-list-entry_sample {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.font-child-list-entry_sample img {
+  align-self: flex-start;
+  margin-bottom: 7px;
+  max-width: 100%;
+}
+
+.font_buy .button {
+  width: 139px;
+  border: none;
+  padding: 3px 7px;
+  cursor: pointer;
+  background-color: #db704d;
+}
+
+/** Styling for the Shopping Cart */
+.ck_mobile {
+  display: none;
+}
+
+.rm_mobile {
+  display: none;
+}
+
+/*.ck_fullscreen { display: block!important; }*/
+/** Styling for the search field */
+.search-widget {
+  font-family: "Paralucent Medium", serif;
+  display: flex;
+  justify-content: flex-end;
+}
+.search-widget label {
+  margin-right: 3px;
+}
+
+/** Style for pagination **/
+.font-list_pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.font-list_pagination .font-list_pagination_p.active a {
+  color: black;
+}
+.font-list_pagination .font-list_pagination_p a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #cec7bd;
+  padding: 0 3px;
+}
+.font-list_pagination .font-list_pagination_p a:hover {
+  color: black;
+}
+.font-list_pagination .font-list_pagination_prev a,
+.font-list_pagination .font-list_pagination_next a {
+  color: #cec7bd;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.font-list_pagination .font-list_pagination_prev a:hover,
+.font-list_pagination .font-list_pagination_next a:hover {
+  color: black;
+}
+.font-list_pagination .font-list_pagination_prev {
+  margin-right: 1rem;
+}
+.font-list_pagination .font-list_pagination_next {
+  margin-left: 1rem;
+}
+
+/** Modal style */
+.modal-popup {
+  left: calc(100% - 870px);
+  margin: -240px 0 0 -25%;
+  opacity: 0;
+  position: absolute;
+  top: -50%;
+  visibility: hidden;
+  width: 100%;
+  max-width: 940px;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+/* Make the modal appear when targeted */
+.modal-popup:target {
+  opacity: 1;
+  top: 50%;
+  visibility: visible;
+}
+
+.modal-popup .header, .modal-popup .footer {
+  border-bottom: 1px solid #e7e7e7;
+  border-radius: 5px 5px 0 0;
+}
+
+.modal-popup .footer {
+  border: none;
+  border-top: 1px solid #e7e7e7;
+  border-radius: 0 0 5px 5px;
+}
+
+.modal-popup h2 {
+  margin: 1%;
+}
+.modal-popup h2 span {
+  font-weight: bold;
+}
+
+.modal-popup .btn {
+  float: right;
+}
+
+.modal-popup .copy, .modal-popup.header, .modal-popup .footer {
+  padding: 25px;
+}
+
+.modal-content {
+  background: #f7f7f7;
+  position: relative;
+  z-index: 20;
+  border-radius: 0px;
+}
+.modal-content .footer a {
+  text-decoration: none;
+  color: #333333;
+}
+.modal-content .footer a:hover {
+  text-decoration: underline;
+}
+
+.modal-popup .copy {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-popup .overlay {
+  background-color: #fff;
+  background: white;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+#modal-agreement {
+  left: 5%;
+  width: 90%;
+  margin: 0;
+  top: 10%;
+  height: 100%;
+  overflow: scroll;
+}
+
+/** Work List styles */
+.work_type-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.work_type-list-entry {
+  width: 150px;
+  height: 150px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #cec7bd;
+}
+.work_type-list-entry:nth-child(6n) {
+  margin-right: 0;
+}
+.work_type-list-entry img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.work-popup h2 {
+  font-weight: normal;
+}
+.work-popup h2 span {
+  font-weight: bold;
+}
+
+/** Client list styles */
+.client-list {
+  column-count: 4;
+  column-width: 223px;
+}
+
+/** Form styles */
+input {
+  font-family: "Paralucent Medium", serif;
+  line-height: 1.8rem;
+  color: #333333;
+}
+
+.button-primary {
+  background-color: #cec7bd;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333333;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #cec7bd;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control[type=checkbox] {
+  width: auto;
+  display: inline-block;
+  margin-right: 10px;
+  height: auto;
+}
+
+/* Table styling */
+/* DivTable.com */
+.divTable {
+  display: table;
+}
+
+.divTableRow {
+  display: table-row;
+}
+
+.divTableHeading {
+  display: table-header-group;
+}
+
+.divTableCell, .divTableHead {
+  display: table-cell;
+}
+
+.divTableHeading {
+  display: table-header-group;
+}
+
+.divTableFoot {
+  display: table-footer-group;
+}
+
+.divTableBody {
+  display: table-row-group;
+}
+
+.divTable.cart {
+  width: calc( 100% - 30px );
+  margin: 0 auto;
+  font-size: 1rem;
+}
+.divTable.cart .divTableHeading {
+  background-color: #cec7bd;
+  font-size: 1.2rem;
+}
+.divTable.cart .cart_item {
+  padding-left: 2px;
+  width: 40%;
+}
+.divTable.cart .cart_charge {
+  width: 30%;
+}
+
+.divTableRow.shade {
+  background-color: #ddddaa;
+}
+
+.ck_mobile.shade {
+  background-color: #ddddaa;
+  width: calc( 100% - 30px );
+  margin: 0 auto;
+}
+.ck_mobile.shade a {
+  font-size: 1rem;
+  padding-left: 2px;
+}
+
+/** Articles styles */
+article.font-sets-list {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+/**
+    Header styles
+*/
+/*header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    @include respond-to-above( xs-screens )
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}*/
+
+.tagline {
+    font-family: 'Dynasty', sans-serif;
+    font-size: 1.1rem;
+    display: none;
+}
+.tagline span {
+    font-weight: bold;
+}
+ul.subtitle {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}

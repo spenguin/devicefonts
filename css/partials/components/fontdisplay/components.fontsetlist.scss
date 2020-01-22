@@ -1,0 +1,75 @@
+/** Styles for Font Set Display */
+
+
+.font-child_heading {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid $RHGrey;
+    .font-child_heading-hero {
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 50%, #cec7bd 50%, #cec7bd 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#cec7bd 50%,#cec7bd 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#cec7bd 50%,#cec7bd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cec7bd',GradientType=1 ); /* IE6-9 */
+        border-top: 4px solid $RHGrey;
+        width: 229px;
+        height: 96px;
+        margin-right: 8px;
+        overflow: hidden;
+        h1 {
+            font-weight: normal;
+        }
+    }
+    .font-child_heading-hero-sample {
+        width: 703px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        img {
+            align-self: flex-start;
+            margin-bottom: 7px;
+            max-width: 100%;
+        }
+    }
+}
+.font-buy-all_form {
+    float: right;
+}
+.font-child-list {
+    margin-top: 50px;
+}
+.details_fullscreen {
+    display: flex;
+    flex-direction: row;
+}
+.details_mobile {
+    display: none;
+}
+.font-child-list-entry {
+    padding-top: 18px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eeeeee;
+    &:last-child { border-bottom: none; }
+}
+.font-child-list-entry_buy {
+    float: right;
+}
+.font-child-list-entry_sample {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    img {
+        align-self: flex-start;
+        margin-bottom: 7px;
+        max-width:100%;
+    }        
+}
+
+.font_buy .button {
+    width: 139px;
+    border: none;
+    padding: 3px 7px;
+    cursor: pointer;
+    background-color: $RHRed;
+}

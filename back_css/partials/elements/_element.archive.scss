@@ -1,0 +1,29 @@
+/** style for multi-element presentation */
+
+.work_type-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.work_type-list-entry {
+    border: 1px solid $RHGrey;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    //margin-right: 20px;//calc(100% - 200px); // ( 100% - 5 * 200px ) / 5 
+    //margin-right: -webkit-calc(100% - 200px);
+    flex: 0 0 21%; /* explanation below */
+    margin: 0 0 3% 0;
+    overflow: hidden;
+}
+
+.work_type-list-entry img {
+   //width: 120%;
+   //height: 120%
+}
+

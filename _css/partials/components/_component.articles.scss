@@ -1,0 +1,15 @@
+/**
+	Article styles
+*/
+article {
+    width: 100%;
+    margin: 0 auto;
+    @include respond-to( medium-screens )
+	{
+//        width: 90%;
+    }  
+    @include respond-to( large-screens )
+	{
+//        width: 80%;
+	}      
+}

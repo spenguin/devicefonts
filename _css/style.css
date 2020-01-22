@@ -1,0 +1,727 @@
+/**
+    Global styles
+*/
+html {
+  padding: 0;
+  margin: 0;
+}
+
+/**
+    Colours
+*/
+/**
+	Fonts styles
+*/
+@font-face {
+  font-family: "Paralucent Medium";
+  src: url("fonts/Paralucent-Medium.eot");
+  src: url("fonts/Paralucent-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Paralucent-Medium.woff") format("woff"), url("fonts/Paralucent-Medium.ttf") format("truetype"), url("fonts/Paralucent-Medium.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: "Dynasty";
+  src: url("fonts/Dynasty-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dynasty";
+  src: url("fonts/Dynasty-Light.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+body {
+  font-size: 87.5%;
+  font-family: "Paralucent Medium", serif;
+  line-height: 1.8rem;
+  color: #333333;
+}
+
+/**
+	Grid values
+*/
+/**
+	Mixins
+*/
+/* Usage - Stick into the top of your SCSS sheet and @include where needed for cross browser transitions. 
+
+.class {
+		 @include transition($transition-property, $transition-time, $method);
+}
+
+$transition-property = the property you want to transition
+$transition-time = seconds you want the transition to last
+$method = how you want it to transition - e.g. ease-in-out
+
+Usage example;
+
+-------------
+
+.item {
+		@include transition(padding, 1s, ease-in-out);
+}
+
+-------------
+
+*/
+/**
+	Calculate the width of <main> based on the aside and gutter widths
+*/
+/**
+	Set of mixins from https://gist.github.com/garyharan/957284
+*/
+/**
+    Elements accumulated
+*/
+/**
+    Structure styles
+*/
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container .row p {
+  width: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/**
+    Heading styles
+*/
+.col h3 {
+  text-align: center;
+}
+
+.font-list-entry h3 {
+  font-size: 1rem;
+  text-align: left;
+}
+
+/** style for multi-element presentation */
+.work_type-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work_type-list-entry {
+  border: 1px solid #cec7bd;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 0 0 21%;
+  /* explanation below */
+  margin: 0 0 3% 0;
+  overflow: hidden;
+}
+
+/** Style for pagination **/
+.font-list_pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.font-list_pagination .font-list_pagination_p.active a {
+  color: black;
+}
+.font-list_pagination .font-list_pagination_p a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #cec7bd;
+  padding: 0 3px;
+}
+.font-list_pagination .font-list_pagination_p a:hover {
+  color: black;
+}
+.font-list_pagination .font-list_pagination_prev a,
+.font-list_pagination .font-list_pagination_next a {
+  color: #cec7bd;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.font-list_pagination .font-list_pagination_prev a:hover,
+.font-list_pagination .font-list_pagination_next a:hover {
+  color: black;
+}
+.font-list_pagination .font-list_pagination_prev {
+  margin-right: 1rem;
+}
+.font-list_pagination .font-list_pagination_next {
+  margin-left: 1rem;
+}
+
+/** Font styles **/
+.note {
+  font-style: italic;
+}
+
+/*
+@import "partials/objects.grid";
+@import "partials/objects.wrappers";*/
+/*
+@import "partials/elements.headings";
+@import "partials/elements.text";
+*/
+/**
+    Components accumulated
+*/
+/**
+    Structure styles
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+.menu-main-menu-container {
+  width: 100%;
+}
+
+nav {
+  background-color: #cec7bd;
+}
+nav .menu-header {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  nav .menu-header {
+    display: block;
+  }
+  nav .menu-header .logo {
+    display: inline-block;
+    margin: 10px 0;
+    width: 76px;
+    height: 76px;
+  }
+  nav .menu-header .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  nav .menu-header .menu-header-menu-container {
+    display: inline-block;
+  }
+}
+nav .menu-header ul {
+  margin-bottom: 0.5rem;
+}
+nav .menu-mobile {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  nav .menu-mobile {
+    display: none;
+  }
+}
+nav .menu-mobile ul {
+  flex-direction: column;
+}
+nav .menu-mobile ul ul {
+  margin-left: 7px;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  /*        &.main {
+              width: 25%;
+          }
+          &.secondary {
+              width: 40%;
+          }*/
+}
+nav ul li {
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
+nav ul li a {
+  color: #333333;
+  text-decoration: none;
+  text-shadow: 1px 1px black;
+}
+nav ul li a:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+  .home main .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.menu-mobile ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  /*background-color: #fff;*/
+}
+
+.menu-mobile li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.menu-mobile .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 15px 0;
+  margin-left: -10px;
+  text-decoration: none;
+}
+
+.menu-mobile .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.menu-mobile .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.menu-mobile .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.menu-mobile .menu-icon .navicon:before,
+.menu-mobile .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.menu-mobile .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.menu-mobile .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.menu-mobile .menu-btn {
+  display: none;
+}
+
+.menu-mobile .menu-btn:checked ~ div .menu {
+  max-height: 100%;
+}
+
+.menu-mobile .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu-mobile .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-mobile .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu-mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.col a {
+  display: flex;
+}
+.col a img {
+  margin: 0 auto;
+}
+
+/**
+    Header styles
+*/
+/*header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    @include respond-to-above( xs-screens )
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}*/
+.tagline {
+  font-family: "Dynasty", sans-serif;
+  font-size: 1.1rem;
+  display: none;
+}
+
+.tagline span {
+  font-weight: bold;
+}
+
+ul.subtitle {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+/**
+	Article styles
+*/
+article {
+  width: 100%;
+  margin: 0 auto;
+}
+/**
+    Footer styles
+*/
+footer .row {
+  flex-direction: column;
+}
+@media only screen and (min-width: 500px) {
+  footer .row {
+    flex-direction: row;
+  }
+}
+footer p.copyright {
+  padding-left: 15px;
+}
+
+/**
+ *  Forms styles
+ */
+form.checkout {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+form.checkout select option {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+input[name=agreement] {
+  width: auto;
+  display: inline-block;
+  height: auto;
+  margin-right: 3%;
+}
+
+/** Modal code */
+/* Normal styles for the modal */
+/* Normal styles for the modal */
+.modal-popup {
+  left: 50%;
+  margin: -240px 0 0 -25%;
+  opacity: 0;
+  position: absolute;
+  top: -50%;
+  visibility: hidden;
+  width: 50%;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+/* Make the modal appear when targeted */
+.modal-popup:target {
+  opacity: 1;
+  top: 50%;
+  visibility: visible;
+}
+
+.modal-popup .header, .modal-popup .footer {
+  border-bottom: 1px solid #e7e7e7;
+  border-radius: 5px 5px 0 0;
+}
+
+.modal-popup .footer {
+  border: none;
+  border-top: 1px solid #e7e7e7;
+  border-radius: 0 0 5px 5px;
+}
+
+.modal-popup h2 {
+  margin: 1%;
+}
+.modal-popup h2 span {
+  font-weight: bold;
+}
+
+.modal-popup .btn {
+  float: right;
+}
+
+.modal-popup .copy, .modal-popup.header, .modal-popup .footer {
+  padding: 15px;
+}
+
+.modal-content {
+  background: #f7f7f7;
+  position: relative;
+  z-index: 20;
+  border-radius: 0px;
+}
+
+.modal-popup .copy {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-popup .overlay {
+  background-color: #000;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.modal-content h2 {
+  font-size: 1.3rem;
+}
+
+#modal-agreement {
+  left: 5%;
+  width: 90%;
+  margin: 0;
+  top: 10%;
+  height: 100%;
+  overflow: scroll;
+}
+
+/** Fonts styling **/
+.font-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  margin-left: 2%;
+}
+
+.font-list > a {
+  width: 100%;
+  height: 155px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-top: 4px solid #cec7bd;
+  display: flex;
+  flex-direction: column;
+  min-width: 155px;
+  color: #666666;
+}
+@media only screen and (min-width: 768px) {
+  .font-list > a {
+    width: 48%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .font-list > a {
+    width: 24%;
+  }
+}
+.font-list > a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.font-list-entry {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,cec7bd+50,cec7bd+100 */
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 50%, #cec7bd 50%, #cec7bd 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 50%, #cec7bd 50%, #cec7bd 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #cec7bd 50%, #cec7bd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#cec7bd",GradientType=1 );
+  /* IE6-9 */
+  height: 100%;
+  position: relative;
+}
+
+.font-list-entry_sample {
+  font-size: 8rem;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  padding-left: 2vw;
+  padding-top: 25px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.font-list-entry_standard {
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+}
+
+.font-child-list {
+  width: calc( 100% - 30px );
+  margin: 0 auto;
+}
+.font-child-list .font-child-list-entry {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+  flex-direction: column;
+}
+.font-child-list .font-child-list-entry p {
+  width: 100%;
+}
+.font-child-list .font-child-list-entry p.details_fullscreen {
+  display: none;
+  font-size: 1.3rem;
+}
+.font-child-list .font-child-list-entry p.details_mobile {
+  font-size: 1rem;
+}
+.font-child-list .font-child-list-entry .font-child-list-entry_sample {
+  width: 100%;
+  overflow-wrap: break-word;
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+}
+.font-child-list .font-child-list-entry .font-child-list-entry_buy {
+  margin-top: 10px;
+  width: 100%;
+}
+.font-child_heading {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: calc( 100% - 30px );
+  margin: 0 auto;
+}
+.font_buy input {
+  float: right;
+}
+
+/* Table styling */
+/* DivTable.com */
+.divTable {
+  display: table;
+}
+
+.divTableRow {
+  display: table-row;
+}
+
+.divTableHeading {
+  display: table-header-group;
+}
+
+.divTableCell, .divTableHead {
+  display: table-cell;
+}
+
+.divTableHeading {
+  display: table-header-group;
+}
+
+.divTableFoot {
+  display: table-footer-group;
+}
+
+.divTableBody {
+  display: table-row-group;
+}
+
+.divTable.cart {
+  width: calc( 100% - 30px );
+  margin: 0 auto;
+  font-size: 1rem;
+}
+.divTable.cart .divTableHeading {
+  background-color: #cec7bd;
+  font-size: 1.2rem;
+}
+.divTable.cart .cart_item {
+  padding-left: 2px;
+  width: 40%;
+}
+.divTable.cart .cart_charge {
+  width: 30%;
+}
+
+.rm_fullscreen {
+  display: none;
+}
+
+.ck_fullscreen {
+  display: none;
+}
+
+.divTableRow.shade {
+  background-color: #ddddaa;
+}
+
+.ck_mobile.shade {
+  background-color: #ddddaa;
+  width: calc( 100% - 30px );
+  margin: 0 auto;
+}
+.ck_mobile.shade a {
+  font-size: 1rem;
+  padding-left: 2px;
+}
+
+/*
+@import "partials/components.header";
+@import "partials/components.footer";
+@import "partials/components.site-nav";
+@import "partials/components.articles";
+@import "partials/components.buttons";
+@import "partials/components.forms";
+
+*/
+
+/*# sourceMappingURL=style.css.map */

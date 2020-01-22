@@ -1,0 +1,114 @@
+/** Fonts styling **/
+
+.font-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: 2%;
+}
+.font-list > a {
+    width: 100%; //22%;
+    @include respond-to-above( xs-screens ) {
+        width: 48%;
+    }
+    @include respond-to-above( medium-screens ) {
+        width: 24%;
+    }
+    height: 155px; //22%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-top: 4px solid $RHGrey;
+    display: flex;
+    //align-items: center;
+    //justify-content: center;
+    flex-direction: column;
+    //text-align: center;
+    //min-height: 155px;
+    min-width: 155px;
+    color: #666666;
+    &:hover {
+        color: black;
+        text-decoration: none;
+    }
+}
+.font-list-entry {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,cec7bd+50,cec7bd+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 50%, #cec7bd 50%, #cec7bd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#cec7bd 50%,#cec7bd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#cec7bd 50%,#cec7bd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cec7bd',GradientType=1 ); /* IE6-9 */
+    height: 100%;
+    position: relative;
+}
+.font-list-entry_sample {
+    font-size: 8rem;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    padding-left: 2vw;
+    padding-top: 25px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.font-list-entry_standard {
+    position: absolute;
+    bottom: 0;
+    right: 3px;
+}
+
+.font-child-list {
+    width: calc( 100% - 30px );
+    margin: 0 auto;
+    //width: 100%;
+    .font-child-list-entry {
+        width: 100%; //calc( 100% - 15px);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 3%; 
+        //margin-left: 15px;    
+        flex-direction: column;
+        p {
+            width: 100%;
+            
+            &.details_fullscreen {
+                display: none;
+                font-size:1.3rem;
+            }
+            &.details_mobile {
+                font-size:1.0rem;
+            }
+        }
+
+        .font-child-list-entry_sample {
+            width: 100%; //width: 85%;
+            overflow-wrap: break-word;
+            font-size: 2.3rem;
+            line-height: 2.3rem;
+        }
+        .font-child-list-entry_buy {
+            margin-top: 10px;
+            width: 100%;//width: 13%;
+            form {
+                //float: right;
+            }
+        }
+    }
+}
+.font-child_heading {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: calc( 100% - 30px );
+    margin: 0 auto;
+    h1 {
+        //width: 50%;
+    }
+
+}
+.font_buy input {
+    float: right;
+}

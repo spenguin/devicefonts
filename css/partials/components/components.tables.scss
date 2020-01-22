@@ -1,0 +1,40 @@
+/* Table styling */
+
+/* DivTable.com */
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
+
+.divTable.cart {
+    width: calc( 100% - 30px );
+    margin: 0 auto;
+    font-size: 1.0rem;
+    .divTableHeading {
+        background-color: $RHGrey;
+        font-size: 1.2rem;
+    }
+    .cart_item {
+        padding-left: 2px;
+        width: 40%;
+    }
+    .cart_charge {
+        width: 30%;
+    }
+}
+
+.divTableRow.shade {
+    background-color: #ddddaa;
+}
+.ck_mobile.shade {
+    background-color: #ddddaa;
+    width: calc( 100% - 30px );
+    margin: 0 auto;
+    a {
+        font-size: 1rem; 
+        padding-left: 2px;
+    }   
+}

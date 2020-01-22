@@ -1,0 +1,10 @@
+/** Styling for the search field */
+
+.search-widget {
+    font-family: $bodyFamily;
+    display: flex;
+    justify-content: flex-end;
+    label {
+        margin-right: 3px;
+    }
+}

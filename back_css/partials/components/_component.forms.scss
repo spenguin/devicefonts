@@ -1,0 +1,19 @@
+/**
+ *  Forms styles
+ */
+
+form.checkout {
+    margin-left: 15px;
+    margin-right: 15px;
+    select option {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+}
+
+input[name=agreement] {
+    width: auto;
+    display: inline-block;
+    height: auto;
+    margin-right: 3%;
+}
